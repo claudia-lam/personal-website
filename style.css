@@ -1,7 +1,8 @@
 
 :root {
     --color-beige: #e1dfdd;
-    --font-primary: 'Nunito Sans', sans-serif;
+    --font-primary: 'Outfit', sans-serif;
+
 }
 
 
@@ -64,11 +65,11 @@
   body {
     background-color: var(--color-beige);
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .container {
-    padding: 50px 150px;
+    padding: 50px 300px;
   }
 
   li {
@@ -96,13 +97,45 @@
 
   .nav-list {
     display: flex;
-    gap: 25px;
+    justify-content: space-evenly;
+    gap: 30px;
     font-size: 20px;
   }
-
 
   a:visited,
   a:link {
     color: inherit;
   }
+
+  /*Hero*/
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .profile-img {
+    flex-shrink: 0;
+    border-radius: 10%;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+
+
+
+
+
+
+
 
