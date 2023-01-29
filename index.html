@@ -16,8 +16,8 @@
       <a href="#"><img id="logo" src="images/claudia-logo.png" alt="a logo with initials C and L"></a>
       <nav>
         <ul class="nav-list">
-            <li><a href="#about-me">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#about-title">About</a></li>
+            <li><a href="#projects-title">Projects</a></li>
             <li><a href="#">Resume</a></li><!--Link to header of resume-->
         </ul>
       </nav>
@@ -25,12 +25,12 @@
   </header>
   <main>
     <section>
-      <div class="container">
+      <div class="container" id="hero-top-padding">
         <div class="hero-container">
           <div class="hero-text-container">
-            <h1>Hi! I'm Claudia, an aspiring developer based in the bay area.</h1>
+            <h1 class="title-padding">Hi! I'm Claudia, an aspiring developer based in the Bay Area.</h1>
             <p>
-              I am currently learning the basics of html, css, and javascript. I'm excited to learn more and will be attending Rithm School in February 2023.
+              I am currently learning the basics of html, css, and javascript, and excited to attend Rithm School in February 2023.
             </p>
           </div>
           <img class="profile-img" src="images/square-profile-pic.png" alt="picture of Claudia Lam">
@@ -38,17 +38,40 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container about-background">
         <div class="about-container">
-          <h2 id="about-me">About</h2>
-          <div id="about-me-sub-text"></div>
-          <p class="indent"> I started to learn how to code when I was building a website for my clothing brand. My mentor advised that learning basic HTML and CSS would save monthly costs on website widgets.</p>
+          <h2 id="about-title" class="title-padding">About</h2>
+          <div id="about-me-subtext"></div>
+          <p class="indent"> I started to learn how to code when I was building a website for my clothing brand. I got advice that learning the basics of HTML and CSS would save monthly costs on website widgets.</p>
           <p class="indent"> There were many times when I wanted to abandon coding and just buy a fancy website builder, but my budget wasn't big enough. They were just too dang expensive. </p>
-          <p class="indent"> After all the struggling and mental gymnastics, I ended up enjoying coding. Looking back, I can thank those companies for their pricing. </p>
-          <p class="indent">And what about my clothing brand? It never took off, but my passion for coding sure did.</p>
+          <p class="indent"> After all the mental gymnastics, I ended up enjoying coding. Looking back, I can thank those companies for their pricing. </p>
+          <p class="indent">And what about my clothing brand? It's still in recursion, and my passion for coding finally made it to base case. </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="projects-container">
+          <h2 id="projects-title" class="title-padding">Projects</h2>
+          <div class="rps-container">
+            <div class="rps-text-container">
+              <h4 class="title-padding">Rock Paper Scissors </h4>
+              <p>A game of rock, paper, scissors using vanilla javascript where I learned how to manipulate DOM.</p>
+              <div class="rps-buttons-container">
+                <button class="rps-buttons live-btn">
+                  <a href="https://claudia-lam.github.io/rock-paper-scissors/" target="_blank">Live Preview</a>
+                </button>
+                <button class="rps-buttons github-btn">
+                  <a href="https://github.com/claudia-lam/rock-paper-scissors" target="_blank">Code</a>
+                </button>
+            </div>
+          </div>
+          <a class="rps-img-container"href="https://claudia-lam.github.io/rock-paper-scissors/" target="_blank">
+          <img id="rps-img" src="images/rps-screenshot.png" alt="rock paper scissors game">
+          </a>
+        </div>
         </div>
       </div>
     </section>
   </main>
 </body>
-</html>

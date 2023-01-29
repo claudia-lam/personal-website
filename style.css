@@ -2,10 +2,12 @@
 :root {
     --color-background-beige: #e1dfdd;
     --color-background-grey: #9c9a99;
-    --color-background-black: black;
-    --font-primary: 'Outfit', sans-serif;
+    --color-background-black: rgb(36, 33, 33);
     --color-text-black: #2c242b;
     --color-text-white: #f8f1f1;
+    --color-btn-blue: #167aad;
+    --padding-under-titles: 30px;
+    --font-primary: 'Outfit', sans-serif;
 }
 
  /*/////////////////////////////////////////////////////////////////////////*/
@@ -73,11 +75,11 @@
   body {
     background-color: var(--color-background-beige);
     font-family: var(--font-primary);
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .container {
-    padding: 50px 350px;
+    padding: 50px 330px 70px;
   }
 
   li {
@@ -88,10 +90,18 @@
     text-decoration: none;
   }
 
-  a:hover {
-    background-color: #d5dcd7;
+  h2 {
+    text-decoration: underline;
   }
 
+  h1 {
+    padding-bottom: var(--padding-under-titles);
+    font-size: 50px;
+  }
+
+  .title-padding {
+    padding-bottom: var(--padding-under-titles);
+  }
   /* Header */
   .header-container {
     display: flex;
@@ -115,7 +125,16 @@
     color: inherit;
   }
 
+  .nav-list > li:hover {
+    text-decoration: underline;
+    color: var(--color-btn-blue);
+  }
+
   /*Hero*/
+  #hero-top-padding {
+    padding-top: 20px;
+  }
+
   .hero-container {
     display: flex;
     justify-content: space-between;
@@ -129,11 +148,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
-  h1 {
-    padding-bottom: 20px;
-    font-size: 50px;
-  }
-
   .hero-text-container {
     display: flex;
     flex-direction: column;
@@ -141,20 +155,64 @@
   }
 
   /* About */
-  h2 {
-    text-decoration: underline;
-  }
 
-  #about-me-sub-text {
-    padding-top: 20px;
-  }
-
-  .indent {
-    text-indent: 35px;
+  .about-background {
+    background-color: var(--color-background-black);
+    color: var(--color-background-beige);
   }
 
 
+  /*Projects*/
 
+  /*RPS*/
+  .rps-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: solid 3px black;
+  }
+
+  .rps-text-container {
+    padding: 30px 20px;
+  }
+
+  .rps-img-container {
+    width: 50%;
+  }
+
+  #rps-img {
+    border-radius: 20px;
+    border-radius: 0 15px 15px 0;
+    opacity: 90%;
+  }
+
+  #rps-img:hover {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .rps-buttons-container {
+    padding-top: var(--padding-under-titles);
+    display: flex;
+    gap: 20px;
+  }
+
+  .rps-buttons {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .live-btn {
+    background-color: var(--color-btn-blue);
+    color: var(--color-background-beige);
+  }
+
+  .github-btn {
+    background-color: inherit;
+    border: solid 2px var(--color-btn-blue);
+    color: var(--color-btn-blue);
+  }
 
 
 
