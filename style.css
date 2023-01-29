@@ -102,10 +102,16 @@
   .title-padding {
     padding-bottom: var(--padding-under-titles);
   }
+
   /* Header */
+  /* header {
+    box-shadow: 0 4px 32px #0000000f;
+  } */
+
   .header-container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
   }
 
   #logo {
@@ -169,7 +175,8 @@
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
-    border: solid 3px black;
+    /* border: solid 3px black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
   .rps-text-container {
@@ -203,16 +210,20 @@
     padding: 10px;
   }
 
-  .live-btn {
+  .live-btn,
+  .github-btn:hover {
     background-color: var(--color-btn-blue);
     color: var(--color-background-beige);
   }
 
-  .github-btn {
+  .github-btn,
+  .live-btn:hover {
     background-color: inherit;
     border: solid 2px var(--color-btn-blue);
     color: var(--color-btn-blue);
   }
+
+
 
 
 
