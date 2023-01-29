@@ -1,10 +1,15 @@
 
 :root {
-    --color-beige: #e1dfdd;
+    --color-background-beige: #e1dfdd;
+    --color-background-grey: #9c9a99;
+    --color-background-black: black;
     --font-primary: 'Outfit', sans-serif;
-
+    --color-text-black: #2c242b;
+    --color-text-white: #f8f1f1;
 }
 
+ /*/////////////////////////////////////////////////////////////////////////*/
+ /*/////////////////////////////////////////////////////////////////////////*/
 
 /* CSS Reset */
 /*
@@ -60,16 +65,19 @@
     isolation: isolate;
   }
 
+ /*/////////////////////////////////////////////////////////////////////////*/
+ /*/////////////////////////////////////////////////////////////////////////*/
 
 /* General Styling */
+
   body {
-    background-color: var(--color-beige);
+    background-color: var(--color-background-beige);
     font-family: var(--font-primary);
     font-size: 25px;
   }
 
   .container {
-    padding: 50px 300px;
+    padding: 50px 350px;
   }
 
   li {
@@ -131,6 +139,20 @@
     flex-direction: column;
     padding-right: 30px;
   }
+
+  /* About */
+  h2 {
+    text-decoration: underline;
+  }
+
+  #about-me-sub-text {
+    padding-top: 20px;
+  }
+
+  .indent {
+    text-indent: 35px;
+  }
+
 
 
 
