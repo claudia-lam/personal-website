@@ -79,7 +79,7 @@
   }
 
   .container {
-    padding: 50px 330px 70px;
+    padding: 50px 150px 70px;
   }
 
   li {
@@ -104,6 +104,7 @@
   }
 
   /* Header */
+
   /* header {
     box-shadow: 0 4px 32px #0000000f;
   } */
@@ -150,7 +151,7 @@
   .profile-img {
     flex-shrink: 0;
     border-radius: 10%;
-    width: 30%;
+    max-width:100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
