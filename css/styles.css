@@ -22,6 +22,10 @@
   --bs-teal: #1abc9c;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
+  --bs-sand: #FFF2CC;
+  --bs-sunset: #FFD966;
+  --bs-peach: #F4B183;
+  --bs-brown: #DFA67B;
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
@@ -42,6 +46,15 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-nature-rgb: 178, 184, 163;
+  --bs-baby-blue-rgb: 222, 237, 240;
+  --bs-cream-rgb: 255, 245, 235;
+  --bs-beige-rgb: 250, 240, 228;
+  --bs-teal-rgb: 155, 205, 210;
+  --bs-orange-rgb: 255, 133, 81;
+  --bs-peach-rgb: 230, 177, 147;
+  --bs-sunset-rgb: 255, 217, 102;
+  --bs-sand-rgb: 255, 242, 204;
   --bs-primary-rgb: 26, 188, 156;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
@@ -50,6 +63,7 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-theme: 64, 46, 50;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -8071,7 +8085,7 @@ textarea.form-control-lg {
 
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-dark-theme), var(--bs-text-opacity)) !important;
 }
 
 .text-black {
@@ -8127,12 +8141,12 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-brown-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-peach-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -10870,12 +10884,17 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #402E32;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff;
+  color: #402E32;
 }
-
+.divider-custom.divider-dark .divider-custom-line {
+  background-color: #402E32;
+}
+.divider-custom.divider-dark .divider-custom-icon {
+  color: #402E32;
+}
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
@@ -10935,7 +10954,7 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #D97738;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
