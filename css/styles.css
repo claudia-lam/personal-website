@@ -72,7 +72,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.25rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -615,6 +615,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 5%;
 }
 
 .img-thumbnail {
@@ -8098,6 +8099,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-peach {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-peach-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -10846,6 +10852,7 @@ html {
 
 .page-section {
   padding: 6rem 0;
+  background-color: #DFE0DF;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11009,6 +11016,9 @@ html {
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
+    background-image: linear-gradient(90deg, #402E32, #D97738);
+    -webkit-background-clip: text;
+    color: transparent;
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
@@ -11028,7 +11038,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: #FFF7F0;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11063,3 +11073,28 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.dev-icons img{
+  height: 70px;
+}
+
+.tech-stack{
+  display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin: 50px;
+    row-gap: 15px;
+    align-content: flex-start;
+}
+
+.tech-stack-section{
+  background-color: var(--bs-gray-300);
+}
+
+.portfolio-section{
+  padding: 20px
+}
+
