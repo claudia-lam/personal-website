@@ -11005,7 +11005,14 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 22rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px var(--bs-gray-500);
+}
+
+.masthead-text-container {
+  box-shadow: 5px 5px 10px var(--bs-gray-500);
+  border-radius: 10%;
 }
 
 @media (min-width: 992px) {
@@ -11097,4 +11104,46 @@ html {
   filter: drop-shadow(5px 5px 10px var(--bs-gray-500));
 }
 
+#about{
+  padding-right: calc(var(--bs-gutter-x) * 3);
+  padding-left: calc(var(--bs-gutter-x) * 3);
+}
+
+.about-list{
+  list-style: none;
+  list-style-type:"✦" ;
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+.about-underline{
+  font-family: 'Hind Siliguri', sans-serif;
+  border-bottom: 2px solid black;
+  /* font-family: 'Rancho', cursive; */
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.about-text{
+    font-size: 2rem;
+    font-family: var(--bs-font-sans-serif)
+}
+
+.about-img{
+  width: 4rem;
+  height: auto;
+}
+
+.about-img:hover{
+ background-color: var(--bs-peach);
+}
+
+#stanford-img{
+  width: 9rem;
+  height: 3rem;
+}
+
+.about-icon{
+  display: inline-block;
+}
 

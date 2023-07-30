@@ -13,6 +13,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Numans&family=Rancho&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -20,7 +22,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Claudia Lam</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,25 +40,17 @@
         <header class="masthead bg-primary text-dark text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/profile-pic.jpg" alt="claudia lam" />
+                <img class="masthead-avatar mb-5" src="assets/img/profile-pic-circle.png" alt="claudia lam" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Hi, I'm Claudia</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Claudia Lam</h1>
                 <!-- Icon Divider-->
-                <!-- <div class="divider-custom divider-light">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div> -->
-                <!-- Masthead Subheading-->
-                <div class="divider-custom divider-light"></div>
-                    <div class="divider-custom-line"></div>
-                        <p class="masthead-subheading font-weight-light mb-0">Software Engineer
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#D97738" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                              </svg></i>Bay Area, CA
-                        </p>
-                    <div class="divider-custom-line"></div>
                 </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Software Engineer based in the Bay Area</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -67,7 +61,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-file"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -136,28 +130,71 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary text-dark mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-user"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <!-- <div class="row text-dark">
+                            <div class="col-lg-4 ms-auto"><p class="lead">I’m a software engineer with a background in auditing/compliance who loves building and growing technology products that delight users.</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">I discovered my interest for software engineering when  </p></div>
+                    </div> -->
+                    <ul class="about-list">
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p d-inline>I got into coding when:   <span class="about-underline">I was starting an e-commerce store and wanted to customize my site beyond the template.</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p>What I like most about programming:   <span class="about-underline">1 problem can have many solutions. </span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p>My background is in:
+                                    <span class="about-underline">
+                                        Auditing at <a href="https://www.pwc.com/us/en.html">
+                                            <img class="about-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/2560px-PricewaterhouseCoopers_Logo.svg.png" alt="pwc logo"></a>
+                                        and Compliance at<a href="https://rde.stanford.edu/">
+                                            <img id="stanford-img" class="about-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwWLihv6YvvRkBHOW1uPBm67t4KXED0oG1m9i52_vAZytkRiQlhJtIPsa_i6m4z3GT7Y&usqp=CAU" alt="stanford cardignal logo"></a>
+                                    </span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p>My previous roles taught me:   <span class="about-underline">How to adapt and learn about a company's business process quickly.</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p>Currently reading:  <span class="about-underline">Thinking Fast and Slow by Daniel Kahneman.</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="font-weight-light mb-5 ms-3 about-text">
+                                <p>If you were locked in a store for 24 hours what store would you choose?  <span class="about-underline">No brainer, Ikea!</span></p>
+                            </div>
+                            <!-- <div class="masthead-subheading font-weight-light mb-0">
+                                <p>My most memorable bug    <span class="about-underline"></span></p>
+                            </div> -->
+                        </li>
+                    </ul>
                 </div>
-                <!-- About Section Button-->
+                <!-- About Section Button
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
                         <i class="fas fa-download me-2"></i>
                         Free Download!
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- Contact Section-->
@@ -168,7 +205,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
@@ -185,7 +222,7 @@
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
+                                <label for="name">Name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
@@ -194,12 +231,6 @@
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
